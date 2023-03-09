@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Home Page";
+}
+@{
+    var myvar = ViewData.Model; 
+  }
+
+<div class="text-center">
+    <h1 class="display-4">Welcome to the contact List App</h1>
+    <p> </p>
+    <p> </p>
+    <p>
+
+        <h3>Clients on the system : @myvar.numClients</h3>
+        <h3>Exported Data on the system : @myvar.expData</h3>
+        <h3>External Clients in past 7 days : @myvar.extClients</h3>
+        <h3>Imported Data on the system : @myvar.impData</h3>
+    </p>
+</div>
